@@ -6,7 +6,13 @@ authors = ["yukikotani231 <kotani-yuki231@g.ecc.u-tokyo.ac.jp>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
+streamlit-pydantic = "^0.6.0"
+pydantic = "^1.10"
+
+
+[tool.poetry.scripts]
+pydantic-data-creator = "pydantic_data_creator.main:main"
 
 
 [build-system]
