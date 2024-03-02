@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pydantic-data-creator"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["yukikotani231 <kotani-yuki231@g.ecc.u-tokyo.ac.jp>"]
 readme = "README.md"
@@ -12,7 +12,7 @@ pydantic = "^1.10"
 
 
 [tool.poetry.scripts]
-pydcreator = "scripts.run:main"
+pydcreator = "pydantic_data_creator.cli:main"
 
 [build-system]
 requires = ["poetry-core"]
