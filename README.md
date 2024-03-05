@@ -5,7 +5,7 @@ A simple tool to create json data for pydantic models.
 ## Installation
 
 ```bash
-pip install pydantic-data-creator
+pip install git+https://github.com/yukikotani231/pydantic-data-creator
 ```
 
 ## Usage
