@@ -22,6 +22,12 @@ def main(module_path: str, model_name: str):
 
     data = sp.pydantic_form(key="my_form", model=model)
     if data:
+        st.download_button(
+            label="Download JSON",
+            data=data.json(indent=2, ensure_ascii=False),
+            file_name=f"{model_name}.json",
+            mime="application/json",
+        )
         st.json(data.json())
 
 
