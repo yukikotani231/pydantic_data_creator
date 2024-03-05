@@ -1050,14 +1050,12 @@ snowflake = ["snowflake-connector-python (>=2.8.0)", "snowflake-snowpark-python 
 
 [[package]]
 name = "streamlit-pydantic"
-version = "0.6.0"
+version = "0.6.0.dev1"
 description = "Auto-generate Streamlit UI from Pydantic Models & Dataclasses."
 optional = false
 python-versions = ">=3.7"
-files = [
-    {file = "streamlit-pydantic-0.6.0.tar.gz", hash = "sha256:3bc5d51af085eb6791b360f569f1a541681ddcc51579b09a1e2ab54639b39d49"},
-    {file = "streamlit_pydantic-0.6.0-py3-none-any.whl", hash = "sha256:7a69ec6519f5de1b21bd9737891c61d8fea33d7727824ab19c4c65d49f136304"},
-]
+files = []
+develop = false
 
 [package.dependencies]
 importlib-resources = "*"
@@ -1066,6 +1064,12 @@ streamlit = ">=1.14.0"
 
 [package.extras]
 dev = ["black", "build", "colorama", "flake8", "isort", "lazydocs", "mypy", "pydocstyle", "pytest", "pytest-cov", "pytest-mock", "rope", "setuptools", "twine", "types-dataclasses", "universal-build", "wheel"]
+
+[package.source]
+type = "git"
+url = "https://github.com/yukikotani231/streamlit-pydantic.git"
+reference = "main-v1"
+resolved_reference = "f3c02ab907cc52a78d6bf23f049f5cc55a9a193b"
 
 [[package]]
 name = "tenacity"
@@ -1260,4 +1264,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "4cef4e0f1ac84993acf40122a18e7182a717f4c89f527398a89822a0e6abdb2c"
+content-hash = "220153448704b339c49efe86fe33a22b1b09b1a7acb6171c4357e8711f64931a"

@@ -1,15 +1,14 @@
 [tool.poetry]
 name = "pydantic-data-creator"
-version = "0.1.2"
+version = "0.1.3"
 description = ""
 authors = ["yukikotani231 <kotani-yuki231@g.ecc.u-tokyo.ac.jp>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-streamlit-pydantic = "^0.6.0"
-pydantic = "<2"
-
+streamlit-pydantic = {git = "https://github.com/yukikotani231/streamlit-pydantic.git", branch = "main-v1"}
+pydantic = "^1.10"
 
 [tool.poetry.scripts]
 pydcreator = "pydantic_data_creator.cli:main"
