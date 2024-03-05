@@ -2,6 +2,10 @@
 
 A simple tool to create json data for pydantic models.
 
+<img src="docs/sample_1.png" width="500">
+
+<img src="docs/sample_2.png" width="500">
+
 ## Installation
 
 ```bash
