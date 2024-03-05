@@ -1,5 +1,9 @@
 import argparse
 import subprocess
+from pathlib import Path
+
+
+DIR = Path(__file__).parent
 
 
 def main():
@@ -10,7 +14,7 @@ def main():
     parser.add_argument("model_name", help="The name of the pydantic model to use for the form")
     args = parser.parse_args()
 
-    cmd = ["streamlit", "run", "pydantic_data_creator/main.py", args.module_path, args.model_name]
+    cmd = ["streamlit", "run", str(DIR / "main.py"), args.module_path, args.model_name]
 
     try:
         subprocess.run(cmd)
