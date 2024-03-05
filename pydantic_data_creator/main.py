@@ -1,10 +1,15 @@
 import argparse
+import os
+import sys
 from importlib import import_module
 from pydantic import BaseModel
 from dataclasses import is_dataclass
 
 import streamlit as st
 import streamlit_pydantic as sp
+
+
+sys.path.append(os.getcwd())
 
 
 def main(module_path: str, model_name: str):
